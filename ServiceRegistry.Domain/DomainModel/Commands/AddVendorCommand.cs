@@ -27,14 +27,13 @@ namespace ServiceRegistry.Domain.DomainModel.Commands
             VendorApplications = vendorApplications;
         }
 
-        public string VendorName { get; }
-        public IList<VendorApplication> VendorApplications { get; }
-
         #endregion
 
         #region Properties
 
+        public string VendorName { get; }
 
+        public IList<VendorApplication> VendorApplications { get; }
 
         #endregion
     }

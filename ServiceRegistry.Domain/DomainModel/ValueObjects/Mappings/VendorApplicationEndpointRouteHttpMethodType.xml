@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ValueObjects>
+	<ValueObject>
+		<Code>Get</Code>
+		<Text>Get</Text>
+	</ValueObject>
+	<ValueObject>
+		<Code>Post</Code>
+		<Text>Post</Text>
+	</ValueObject>
+	<ValueObject>
+		<Code>Put</Code>
+		<Text>Put</Text>
+	</ValueObject>
+	<ValueObject>
+		<Code>Delete</Code>
+		<Text>Delete</Text>
+	</ValueObject>
+</ValueObjects>

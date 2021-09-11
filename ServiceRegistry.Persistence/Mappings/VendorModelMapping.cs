@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ServiceRegistry.Domain.DomainModel.Aggregates;
 using ServiceRegistry.Domain.DomainModel.Entities;
+using ServiceRegistry.Domain.DomainModel.ValueObjects;
 using ServiceRegistry.Persistence.ValueObjectConverters;
 
 namespace ServiceRegistry.Persistence.Mappings.ServiceMonitoringDomainModel
@@ -25,6 +26,11 @@ namespace ServiceRegistry.Persistence.Mappings.ServiceMonitoringDomainModel
                 .Entity<VendorApplicationEndpoint>()
                 .Property(o => o.Id)
                 .HasConversion(new SingleValueObjectIdentityValueConverter<VendorApplicationEndpointId>());
+
+            modelBuilder
+                .Entity<VendorApplicationEndpoint>()
+                .Property(o => o.VendorApplicationEndpointRouteHttpMethod)
+                .HasConversion(new ValueObjectValueConverter<VendorApplicationEndpointRouteHttpMethodType, VendorApplicationEndpointRouteHttpMethodTypes>());
 
             modelBuilder
                 .Entity<VendorApplicationEndpointParameter>()

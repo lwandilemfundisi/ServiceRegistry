@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ServiceRegistry.Persistence;
 
 namespace ServiceRegistry.Persistence.Migrations
 {
     [DbContext(typeof(VendorContext))]
-    partial class VendorContextModelSnapshot : ModelSnapshot
+    [Migration("20210911100227_AddProperty_VendorApplicationEndpointRouteHttpMethod")]
+    partial class AddProperty_VendorApplicationEndpointRouteHttpMethod
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

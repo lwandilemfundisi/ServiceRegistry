@@ -65,7 +65,7 @@ namespace ServiceRegistry.Api.Controllers
                         new VendorApplicationRequestModel
                         {
                             Id = VendorApplicationId.New,
-                            VendorApplicationUrl = @"\Test\TestCall",
+                            VendorApplicationUrl = @"Https://localhost:8001",
                             VendorApplicationName = "TestVendorApplicationName",
                             VendorApplicationEndpoints = new List<VendorApplicationEndpointRequestModel>
                             {
@@ -74,7 +74,7 @@ namespace ServiceRegistry.Api.Controllers
                                     Id = VendorApplicationEndpointId.New,
                                     VendorApplicationEndpointDescription = "TestApplicationEndpointDescription",
                                     VendorApplicationEndpointName = "TestApplicationEndpointName",
-                                    VendorApplicationEndpointRoute = @"\TestApplicationEndpointName\TestApplicationEndpointNameMethod\",
+                                    VendorApplicationEndpointRoute = @"\TestApplicationEndpointName\TestApplicationEndpointNameMethod",
                                     Cost = 1.451M,
                                     IsActive = true,
                                     VendorApplicationEndpointParameters = new List<VendorApplicationEndpointParameterRequestModel>

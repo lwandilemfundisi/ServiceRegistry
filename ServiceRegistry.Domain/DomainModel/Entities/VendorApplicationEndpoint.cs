@@ -1,4 +1,5 @@
 ﻿using Microservice.Framework.Domain;
+using ServiceRegistry.Domain.DomainModel.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace ServiceRegistry.Domain.DomainModel.Entities
         public string VendorApplicationEndpointDescription { get; set; }
 
         public string VendorApplicationEndpointRoute { get; set; }
+
+        public VendorApplicationEndpointRouteHttpMethodType VendorApplicationEndpointRouteHttpMethod { get; set; }
 
         public decimal Cost { get; set; }
 
